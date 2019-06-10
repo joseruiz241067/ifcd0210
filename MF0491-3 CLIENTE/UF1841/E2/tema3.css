@@ -1,0 +1,47 @@
+*{
+
+   margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+h1{
+	color: #3445AE;
+	font-size: 5em;
+}
+
+.otroh1{
+     color: #C92727;
+	font-size: 2em;
+
+}
+
+#mih1{
+	 color: #1BE1C3;
+	 font-size: 7em;
+
+}
+
+p.otroh1{
+	font-weight: 100;
+}
+
+p.otroh1 a{
+	font-weight: 300;
+	color: #E91C1C;
+}
+
+.tipodemezclas{
+	color: black;
+	font-size: 2em;"
+}
+
+.flex-container {
+  display: flex; justify-content: center;
+  font-size: 3em; color: blue;
+}
+
+.flex-container1 {
+  display: flex; justify-content: center;
+  font-size: 1em; color: green;
+}
