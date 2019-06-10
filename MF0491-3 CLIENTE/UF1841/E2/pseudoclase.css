@@ -1,0 +1,41 @@
+input, textarea {
+	display:block;
+	margin:10px 0;
+	background-color: #6353C3;
+	color: #CADADE;
+	
+
+}
+
+
+
+/*------------ Estilos Pseudo Clases Básicas ------------------*/
+
+a:link {
+	color:red;
+	text-decoration:none;
+
+}
+
+a:visited {
+	color: gray;
+}
+
+a:hover, p:hover {
+	background: yellow;
+	color: white;
+	padding: 5px;
+}
+
+a:active {
+	background:#007805;
+	color: yellow;
+}
+
+input:focus, textarea:focus {
+	background: black;
+	color: #fff;
+	height: 50px;
+}
+
+/* -------------- Fin Estilos Pseudo Clases Básicas -------------------------*/
