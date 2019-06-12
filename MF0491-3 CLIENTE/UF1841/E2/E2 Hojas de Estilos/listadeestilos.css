@@ -1,0 +1,55 @@
+ 
+
+ /* selector universal */
+* {
+ 	margin: 0;
+ 	padding: 0;
+ 	color: red;
+ 	
+ }
+
+ /* selector universal */
+
+ /* selector de tipo o elemento */
+
+ body {
+ 	background-color: #cadde5;
+ 	padding: 30px;
+ }
+
+
+ h1 {
+ 	color: #2980b9;
+ 	font-size:40px;
+ }
+
+h2 {
+	color: red;
+	font-size:30px;
+}
+
+p {
+	color: white;
+	background: #4b8bc1;
+	padding: 15px;
+}
+
+/* selector de tipo o elemento */
+
+h1 span {
+	font-weight: bold;
+	color: #D82222;
+}
+
+h2 span {
+	font-weight: bold;
+	color: white;
+
+}
+
+p span {
+	font-weight: bold;
+	color: #15B930;
+
+}
+

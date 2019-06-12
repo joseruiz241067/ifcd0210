@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD generado con XMLSpy v2019 rel. 3 sp1 (http://www.altova.com) -->
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT equipo (nombre, ciudad, entrenador, jugadores)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT jugador (nombre, nacionalidad)>
+<!ATTLIST jugador
+	posicion (defensa | delantero | portero) #REQUIRED
+>
+<!ELEMENT jugadores (jugador+)>
+<!ELEMENT entrenador EMPTY>
+<!ELEMENT nacionalidad (#PCDATA)>
+<!ELEMENT equipos_de_futbol (equipo+)>
