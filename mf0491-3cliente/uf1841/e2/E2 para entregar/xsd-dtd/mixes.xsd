@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- W3C Schema generado con XMLSpy v2019 rel. 3 sp1 (http://www.altova.com) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="discografica">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="BLANCO Y NEGRO"/>
+				<xs:enumeration value="MAX MUSIC"/>
+				<xs:enumeration value="OPEN RECORDS"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="djs">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="MANUEL TIJERAS"/>
+				<xs:enumeration value="RAÚL ORELLANA Y QUIQUE TEJADA"/>
+				<xs:enumeration value="TONI PERET Y MIKE PLATINAS"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="megamixes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="nombre"/>
+				<xs:element ref="discografica"/>
+				<xs:element ref="saga"/>
+				<xs:element ref="djs"/>
+				<xs:element ref="nombre"/>
+				<xs:element ref="discografica"/>
+				<xs:element ref="saga"/>
+				<xs:element ref="djs"/>
+				<xs:element ref="nombre"/>
+				<xs:element ref="discografica"/>
+				<xs:element ref="saga"/>
+				<xs:element ref="djs"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nombre">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="BOLERO MIX"/>
+				<xs:enumeration value="MAX MIX"/>
+				<xs:enumeration value="OPEN MIX"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="saga">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="12 VOLÚMENES"/>
+				<xs:enumeration value="13 VOLÚMENES"/>
+				<xs:enumeration value="32 VOLÚMENES"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+</xs:schema>

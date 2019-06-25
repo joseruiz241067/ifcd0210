@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<megamixes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./xsd-dtd/webmixes.xsd">
+	<nombre>MAX MIX</nombre>
+	<discografica>MAX MUSIC</discografica>
+	<saga>12 VOLÚMENES</saga>
+	<djs>TONI PERET Y MIKE PLATINAS</djs>
+	<nombre>BOLERO MIX</nombre>
+	<discografica>BLANCO Y NEGRO</discografica>
+	<saga>32 VOLÚMENES</saga>
+	<djs>RAÚL ORELLANA Y QUIQUE TEJADA</djs>
+	<nombre>OPEN MIX</nombre>
+	<discografica>OPEN RECORDS</discografica>
+	<saga>13 VOLÚMENES</saga>
+	<djs>MANUEL TIJERAS</djs>
+</megamixes>
