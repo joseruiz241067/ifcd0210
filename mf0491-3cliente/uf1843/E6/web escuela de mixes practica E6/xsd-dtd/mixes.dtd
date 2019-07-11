@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- DTD generado con XMLSpy v2019 rel. 3 sp1 (http://www.altova.com) -->
+<!ELEMENT djs (#PCDATA)>
+<!ELEMENT saga (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT megamixes (nombre, discografica, saga, djs, nombre, discografica, saga, djs, nombre, discografica, saga, djs)>
+<!ATTLIST megamixes
+	xsi:noNamespaceSchemaLocation CDATA #FIXED "webmixes.xsd"
+	xmlns:xsi CDATA #FIXED "http://www.w3.org/2001/XMLSchema-instance"
+>
+<!ELEMENT discografica (#PCDATA)>
