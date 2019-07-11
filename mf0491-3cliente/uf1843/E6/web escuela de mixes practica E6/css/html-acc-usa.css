@@ -1,0 +1,14 @@
+
+
+
+
+/* Estilos para elementos li con clase 'lista-acc' */
+li.lista-acc {
+	display: inline-block;
+	margin: 5px 25px;
+	padding: 7.5px 15px;
+	font: normal 1em calibri, helvetica, sans-serif;
+	border-radius: 15px;
+	background-color: #222;
+	box-shadow: 2.5px 2.5px 2.5px rgba(25, 50, 75, 0.5);
+	color: #fff;
