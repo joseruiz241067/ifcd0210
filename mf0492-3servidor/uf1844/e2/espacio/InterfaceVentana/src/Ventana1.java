@@ -1,0 +1,79 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+import javax.swing.JPasswordField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Ventana1 extends JFrame {
+
+	private JPanel contentPane;
+	public static JTextField txt_usuario;
+	public static JPasswordField pss_contrasena;
+
+	
+	public Ventana1() {
+		setTitle("Contrase\u00F1a");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setToolTipText("");
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblUsuario = new JLabel("Usuario:");
+		lblUsuario.setBounds(25, 32, 84, 14);
+		contentPane.add(lblUsuario);
+		
+		txt_usuario = new JTextField();
+		txt_usuario.setBounds(136, 29, 86, 20);
+		contentPane.add(txt_usuario);
+		txt_usuario.setColumns(10);
+		
+		JLabel lblPassword = new JLabel("Password:");
+		lblPassword.setBounds(25, 82, 70, 14);
+		contentPane.add(lblPassword);
+		
+		pss_contrasena = new JPasswordField();
+		pss_contrasena.setBounds(136, 79, 86, 20);
+		contentPane.add(pss_contrasena);
+		
+		
+		final DatosUsuario data=new DatosUsuario();
+		final Ventana2 window2=new Ventana2 ();
+		
+		JButton btnEntrar = new JButton("Entrar");
+		btnEntrar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			    if (data.probarPass()==1)	{
+				    JOptionPane.showMessageDialog(null, "Bienvenido al Sistema");
+				    window2.setVisible (true);
+				    dispose ();
+			}
+			    else {
+				    JOptionPane.showMessageDialog(null, "Error, usuario o contraseña incorrectos");
+			    }
+				
+			}
+		});
+		btnEntrar.setBounds(40, 174, 89, 23);
+		contentPane.add(btnEntrar);
+		
+		JButton btnSalir = new JButton("Salir");
+		btnSalir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				System.exit(0);
+			}
+		});
+		btnSalir.setBounds(186, 174, 89, 23);
+		contentPane.add(btnSalir);
+	}
+}
